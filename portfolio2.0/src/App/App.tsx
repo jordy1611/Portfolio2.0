@@ -5,6 +5,7 @@ import Header from '../Header/Header';
 import Home from '../Home/Home';
 import About from '../About/About';
 import Work from '../Work/Work';
+import Connect from '../Connect/Connect';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Home />
       <div ref={topSectionRef}><About /></div>
       <Work />
+      <Connect />
     </div>
   );
 }
