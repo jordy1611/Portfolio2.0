@@ -1,0 +1,21 @@
+.Header {
+  &.bg-neutral {
+    background-color:rgba(black, .7);
+    background-color: #0f1922cc;
+  }
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bolder;
+  h2 {
+    margin: 0;
+  }
+}
+// this gets a different class when there's movement
