@@ -18,23 +18,23 @@ function App() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const topRect = aboutRef?.current?.getBoundingClientRect();
-      setScrollAtTop(!!topRect && topRect.top <= 100);
+      setScrollAtTop(!!topRect && topRect.top <= 56);
     })
   }, [])
 
   const scrollToSection= (section: string) => {
     switch (section) {
       case 'Home':
-        homeRef.current?.scrollIntoView();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         break
       case 'About':
-        aboutRef.current?.scrollIntoView();
+        aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
         break;
       case 'Work':
-        workRef.current?.scrollIntoView();
+        workRef.current?.scrollIntoView({ behavior: 'smooth' });
         break;
       case 'Connect':
-        connectRef.current?.scrollIntoView();
+        connectRef.current?.scrollIntoView({ behavior: 'smooth' });
         break;
       default: 
         console.error(`Section ${section} does not exist`)
@@ -42,13 +42,13 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <main className="App">
       <Header scrollAtTop={scrollAtTop} scrollToSection={scrollToSection} />
-      <div ref={homeRef}><Home /></div>
+      <Home />
       <div ref={aboutRef}><About /></div>
       <div ref={workRef}><Work /></div>
       <div ref={connectRef}><Connect /></div>
-    </div>
+    </main>
   );
 }
 

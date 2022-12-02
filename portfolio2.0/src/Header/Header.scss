@@ -11,24 +11,37 @@
   position: fixed;
   top: 0;
   z-index: 50;
-  height: 4rem;
+  height: 3.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   color: #e5e7eb;
   font-weight: bolder;
+  transition-duration: .2s;
   h2 {
     margin: 0;
     margin-right: auto;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.02)
+      }
   }
   a {
     margin-right: 2rem;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05)
+      }
   }
   svg {
     fill: #e5e7eb;
     margin-right: 2rem;
+    cursor: pointer;
     &:nth-last-child(1) {
       margin-right: 0;
+    }
+    &:hover {
+      transform: scale(1.1)
     }
   }
 }
