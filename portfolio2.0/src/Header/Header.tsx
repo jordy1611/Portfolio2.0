@@ -2,12 +2,11 @@ import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './Header.scss';
 
-interface IAbout {
-  scrollAtTop: boolean
-}
+
 
 type HeaderProps = {
-  scrollAtTop: boolean
+  scrollAtTop: boolean,
+  scrollToSection: (section: string) => void
 }
 function Header(props : HeaderProps) {
 
@@ -15,10 +14,10 @@ function Header(props : HeaderProps) {
 
   return (
     <header className={`Header ${props.scrollAtTop ? 'bg-neutral' : ''}`}>
-      <h2>Jordan Shryock</h2>
-      <a>About</a>
-      <a>Work</a>
-      <a>Connect</a>
+      <h2 onClick={() => { props.scrollToSection('Home')}}>Jordan Shryock</h2>
+      <a onClick={() => { props.scrollToSection('About') }}>About</a>
+      <a onClick={() => { props.scrollToSection('Work')}}>Work</a>
+      <a onClick={() => { props.scrollToSection('Connect')}}>Connect</a>
       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
         width="26" height="26"
         viewBox="0 0 50 50">
