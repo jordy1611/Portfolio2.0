@@ -3,19 +3,33 @@
     background-color:rgba(black, .7);
     background-color: #0f1922cc;
   }
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
+  padding: 0 4rem;
   position: fixed;
   top: 0;
   z-index: 50;
   height: 4rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  color: white;
+  color: #e5e7eb;
   font-weight: bolder;
   h2 {
     margin: 0;
+    margin-right: auto;
+  }
+  a {
+    margin-right: 2rem;
+  }
+  svg {
+    fill: #e5e7eb;
+    margin-right: 2rem;
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
   }
 }
 // this gets a different class when there's movement
