@@ -3,9 +3,9 @@ import logo from './logo.svg';
 import './Home.scss';
 
 function Home() {
+  // also do a loading animation when logging in
   return (
     <div className="Home">
-      <h1>HOME PAGE</h1>
     </div>
   );
 }

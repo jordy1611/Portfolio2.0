@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@frank-mayer/react-tag-cloud": "^1.1.1",
+    "TagCloud": "^2.3.2"
+  }
+}
