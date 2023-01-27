@@ -1,6 +1,5 @@
-import React, {useEffect, useRef, useState} from 'react';
-import logo from './logo.svg';
-import './App.scss';
+import { useEffect, useRef, useState } from 'react';
+import '../SASS/_Styles.scss';
 import Header from '../Header/Header';
 import Home from '../Home/Home';
 import About from '../About/About';

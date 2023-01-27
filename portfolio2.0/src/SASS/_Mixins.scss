@@ -1,0 +1,23 @@
+// @mixin loginSizing($width, $height, $marginLR, $marginTB) {
+//   width: $width;
+//   height: $height;
+//   margin: $marginTB $marginLR $marginTB $marginLR;
+//  }
+
+@mixin bgSlider($startColor, $endColor) {
+  
+  	// padding: 5px; 
+	display: inline-block;
+	text-decoration: none; 
+	transition: all 0.3s;
+	background-size: 200%; 
+  transition: background-position .3s cubic-bezier(.47, .1, 1, .63),
+        color .2s linear;
+      transition-delay: 0.0s, 0.15s;
+	background-image: linear-gradient(to left, $endColor 50%, $startColor 50%); 
+
+&:hover {
+
+  background-position: -100% 200%; 
+}
+}

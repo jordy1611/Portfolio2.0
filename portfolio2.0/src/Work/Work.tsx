@@ -1,6 +1,4 @@
-import React, { useEffect } from 'react';
-import logo from './logo.svg';
-import './Work.scss';
+import { useEffect } from 'react';
 
 type WorkProps = {
 }

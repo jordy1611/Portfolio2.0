@@ -1,18 +1,10 @@
 import React, { useEffect } from 'react';
-import logo from './logo.svg';
-import './About.scss';
 import TextSphere from '../TextSphere/TextSphere';
 // import TextSphere from '../Elements/TextSphere/TextSphere';
 
 type AboutProps = {
 }
 function About(props: AboutProps) {
-  
-  const texts = ['3D', 'TagCloud', 'JavaScript',
-    'CSS3', 'Animation', 'Interactive',
-    'Mouse', 'Rolling', 'Sphere',
-    '6KB', 'v2.x',
-  ];
 
   // useEffect(() => {
   //   const tagCloud = document.querySelector('tagcloud');
