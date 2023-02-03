@@ -48,6 +48,9 @@
     &:nth-last-child(2) {
       // margin-right: 1rem;
     }
+    &.slide {
+      @include brSlider();
+    }
     svg {
       fill: $PrimaryTextDark;
       margin-right: 0rem;

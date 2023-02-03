@@ -13,9 +13,9 @@ function Header(props : HeaderProps) {
   return (
     <header className={`Header ${props.scrollAtTop ? 'bg-neutral' : ''}`}>
       <h2 onClick={() => { props.scrollToSection('Home')}}>Jordan Shryock</h2>
-      <a onClick={() => { props.scrollToSection('About') }}>About</a>
-      <a onClick={() => { props.scrollToSection('Work')}}>Work</a>
-      <a onClick={() => { props.scrollToSection('Connect') }}>Connect</a>
+      <a onClick={() => { props.scrollToSection('About') }} className="slide">About</a>
+      <a onClick={() => { props.scrollToSection('Work')}} className="slide">Work</a>
+      <a onClick={() => { props.scrollToSection('Connect') }} className="slide">Connect</a>
       <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jordan-shryock/">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
           width="26" height="26"

@@ -22,10 +22,14 @@ function About(props: AboutProps) {
 
 
   return (
-    <div className="About">
-      <h1>About Page</h1>
-      {/* <span></span> */}
+    <div className="About">   
       <TextSphere />
+      <article>
+        <h2>About</h2>
+        {/* sliding text animation */}
+        <h3>sliding text here</h3>
+        <p>Blah blah blah. I'm really neat. I like being neat in neat places. Blah blah blah blah blah blah blah blah blah blah blah. I'm a neat person. I like doing neat stuff.</p>
+      </article>
     </div>
   );
 }
