@@ -4,7 +4,7 @@ const TextSphere = () => {
 
   const texts = ['React', 'Hooks', 'Angular', 'JavaScript',
     'Typescript', 'Redux', 'ASP.NET', 'Jasmine', 'Node', 'Jest',
-    'Linq', 'EF Core', 'SQL', 'Unit Testing'
+    'Linq', 'EF Core', 'SQL', 'Unit Testing', 'GraphQL'
   ];
 
   useEffect(() => {
@@ -13,7 +13,7 @@ const TextSphere = () => {
       const TagCloud = require("TagCloud");
       const container = ".content";
       TagCloud(container, texts, {
-        radius: 190,
+        radius: 320,
         maxSpeed: 'fast',
         initSpeed: 'fast',
         direction: 135,

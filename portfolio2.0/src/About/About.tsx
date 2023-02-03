@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Loading from '../Loading/Loading';
 import TextSphere from '../TextSphere/TextSphere';
 // import TextSphere from '../Elements/TextSphere/TextSphere';
 
@@ -22,13 +23,21 @@ function About(props: AboutProps) {
 
 
   return (
-    <div className="About">   
+    <div className="about sliding-page">   
       <TextSphere />
       <article>
         <h2>About</h2>
         {/* sliding text animation */}
-        <h3>sliding text here</h3>
+        <h3>Jordan Shryock</h3>
         <p>Blah blah blah. I'm really neat. I like being neat in neat places. Blah blah blah blah blah blah blah blah blah blah blah. I'm a neat person. I like doing neat stuff.</p>
+        <br/>
+        <p>My dog is very neat, he is so very neat.</p>
+        <br />
+        <p>WOOOOOO</p>
+        < br/>  
+        <p>Blah blah blah. I'm really neat. I like being neat in neat places. Blah blah blah blah blah blah blah blah blah blah blah. I'm a neat person. I like doing neat stuff.</p>
+        <br />
+       
       </article>
     </div>
   );

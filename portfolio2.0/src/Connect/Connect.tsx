@@ -4,7 +4,7 @@ type ConnectProps = {
 }
 function About(props: ConnectProps) {
   return (
-    <div className="Connect">
+    <div className="connect sliding-page">
       <h1>Connect Page</h1>
     </div>
   );
