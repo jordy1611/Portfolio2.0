@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
-import Loading from '../Loading/Loading';
+import ChangingText from '../ChangingText/ChangingText';
 
 type WorkProps = {
 }
 function About(props: WorkProps) {
   return (
     <div className="work .sliding-page">
-      <h1>Work Page</h1>
-      <Loading />
+      <ChangingText />
+      <section style={{ width: "60%", height: "60%", background: "black"}}></section>
     </div>
   );
 }

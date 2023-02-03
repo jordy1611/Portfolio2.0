@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Loading() {
+function ChangingText() {
   // also do a loading animation when logging in
   return (
-    <div className="loading">
+    <div className="changing-text">
       <p>System<span>.<span>out</span>.</span><span>println</span>("</p>
       <div className="string">
         <p className="greeting en">Hello World!</p>
@@ -19,4 +19,4 @@ function Loading() {
   );
 }
 
-export default Loading;
+export default ChangingText;

@@ -1,6 +1,3 @@
-import React, { useEffect } from 'react';
-
-
 
 type HeaderProps = {
   scrollAtTop: boolean,

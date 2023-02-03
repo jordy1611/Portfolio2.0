@@ -50,7 +50,7 @@
   }
 }
 
-@mixin changingTextContent() {
+@mixin changingTextContent($fontSize) {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -58,37 +58,36 @@
 
   .greeting {
     position: relative;
-    top: 3.6vmin;
+    top: ($fontSize * 1.8);
     animation: white-out 5s infinite;
   }
   .closure::after {
-    content: '';
-    position: absolute;
-    height: 25vmin;
-    width: 40vmin;
-    background: #282c34;
-    transform: translate(-45vmin, -24.5vmin);
+    // content: '';
+    // position: absolute;
+    // height: 25vmin;
+    // width: 40vmin;
+    // background: #282c34;
+    // transform: translate(-45vmin, -24.5vmin);
   };
 
   .closure::before {
-    content: '';
-    position: absolute;
+    // content: '';
+    // position: absolute;
     // height: 25vmin;
-    height: 1rem;
-    // width: 40vmin;
-    background: #282c34;
-    transform: translate(-40vmin, 5vmin);
+    // height: 1rem;
+    // background: #282c34;
+    // transform: translate(-40vmin, 5vmin);
   }
   @keyframes move {
     25% {
-      transform: translatey(-1.2rem);
+      transform: translatey(($fontSize * -1.2));
       opacity: 1;
     }
     50% {
-      transform: translatey(-2.4rem);
+      transform: translatey(($fontSize * -2.4));
     }
     75% {
-      transform: translatey(-3.6rem);
+      transform: translatey(($fontSize * -3.6));
     }
   }
 }

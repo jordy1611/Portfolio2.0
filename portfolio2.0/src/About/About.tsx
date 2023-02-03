@@ -1,7 +1,5 @@
-import React, { useEffect } from 'react';
-import Loading from '../Loading/Loading';
+
 import TextSphere from '../TextSphere/TextSphere';
-// import TextSphere from '../Elements/TextSphere/TextSphere';
 
 type AboutProps = {
 }

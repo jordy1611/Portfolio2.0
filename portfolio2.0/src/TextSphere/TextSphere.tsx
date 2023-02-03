@@ -2,9 +2,10 @@ import { useEffect } from "react";
 
 const TextSphere = () => {
 
-  const texts = ['React', 'Hooks', 'Angular', 'JavaScript',
+  const texts = ['ReactJS', 'Hooks', 'AngularTS', 'JavaScript',
     'Typescript', 'Redux', 'ASP.NET', 'Jasmine', 'Node', 'Jest',
-    'Linq', 'EF Core', 'SQL', 'Unit Testing', 'GraphQL'
+    'Linq', 'EF Core', 'SQL', 'Unit Testing', 'GraphQL', 'ES5/ES6',
+    'REST', 'AWS'
   ];
 
   useEffect(() => {

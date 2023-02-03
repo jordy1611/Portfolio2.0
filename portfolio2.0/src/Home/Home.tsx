@@ -1,5 +1,4 @@
-import React from 'react';
-import Loading from '../Loading/Loading';
+
 
 function Home() {
   // also do a loading animation when logging in
