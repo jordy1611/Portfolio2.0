@@ -7,7 +7,18 @@ function About(props: WorkProps) {
   return (
     <div className="work .sliding-page">
       <ChangingText />
-      <section style={{ width: "60%", height: "60%", background: "black"}}></section>
+      {/* do animation on 2 different areas */}
+      {/* js */}
+      <p>console.log("Hello World");</p> 
+      {/* c# */}
+      <p>Console.WriteLine("Hello World");</p>
+      {/* java */}
+      <p>System.out.print("Hello World");</p>
+      {/* sql */}
+      <p>PRINT 'Hello World' selected * from greetings;</p>
+      {/* python */}
+      <p>Logging.debug( "Hello World" )</p>
+      <section style={{ width: "60%", height: "60%", background: "black" }}></section>
     </div>
   );
 }
