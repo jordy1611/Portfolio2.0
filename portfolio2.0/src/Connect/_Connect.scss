@@ -4,9 +4,36 @@
   width: 100%;
   height: 100vh;
   background-color: $PrimaryBackgroundDark;
-  padding: 0 6rem;
-  border-top: 4px white solid;
-  h1{
-    margin: 0;
+  padding: 0 6rem 0 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .connect-info{
+    width: 45%;
+    h3 {
+      color: $PrimaryTextBrightLight;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      color: $PrimaryTextLight;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    input {
+      width: 100%;
+      height: 2rem;
+      font-size: 1.2rem;
+      background: $PrimaryBackgroundDark;
+      color: $PrimaryTextLight;
+    }
+    textarea {
+      width: 100%;
+      font-size: 1.2rem;
+      background: $PrimaryBackgroundDark;
+      color: $PrimaryTextLight;
+    }
   }
 }
