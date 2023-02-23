@@ -14,13 +14,13 @@ function About(props: ConnectProps) {
         </p>
 
       </div>
-      <form>
-        <label>Name</label>
-        <input></input>
-        <label>Email</label>
-        <input></input>
-        <label>Message</label>
-        <textarea></textarea>
+      <form className='connect-form'>
+        <label htmlFor='name-input'>Name</label>
+        <input id='name-input'></input>
+        <label htmlFor='email-input'>Email</label>
+        <input id='email-input'></input>
+        <label htmlFor='message-input'>Message</label>
+        <textarea id='message-input'></textarea>
       </form>
     </div>
   );

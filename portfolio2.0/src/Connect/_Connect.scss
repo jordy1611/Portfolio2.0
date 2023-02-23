@@ -9,7 +9,7 @@
   flex-direction: row;
   align-items: center;
   .connect-info{
-    width: 45%;
+    width: 40%;
     h3 {
       color: $PrimaryTextBrightLight;
       margin-bottom: 1rem;
@@ -18,22 +18,36 @@
       color: $PrimaryTextLight;
     }
   }
-  form {
+  .connect-form {
     display: flex;
     flex-direction: column;
-    width: 45%;
-    input {
-      width: 100%;
-      height: 2rem;
-      font-size: 1.2rem;
-      background: $PrimaryBackgroundDark;
+    width: 40%;
+    label {
       color: $PrimaryTextLight;
+      font-size: 1.2rem;
+      margin-bottom: .5rem
+    }
+    input, textarea {
+      width: 100%;
+      font-size: 1.5rem;
+      background: $PrimaryInputBackground;
+      color: $PrimaryTextLight;
+      box-shadow: none;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      padding: 0 1rem;
+    }
+    input {
+      margin-bottom: 2rem;
+      height: 2.8rem;
     }
     textarea {
-      width: 100%;
-      font-size: 1.2rem;
-      background: $PrimaryBackgroundDark;
-      color: $PrimaryTextLight;
+      height: 8rem;
+      min-height: 8rem;
+      max-height: 12rem;
+      max-width: 100%;
+      min-width: 100%;
     }
   }
 }
