@@ -5,7 +5,7 @@ type WorkProps = {
 }
 function About(props: WorkProps) {
   return (
-    <div className="work .sliding-page">
+    <div className="work sliding-page">
       <ChangingText />
       {/* do animation on 2 different areas */}
       {/* js */}
