@@ -21,13 +21,13 @@
   }
 }
 
-@mixin brSlider() {
+@mixin brSlider($color) {
   &::after {
   content: '';
   display: block;
   width: 0;
   height: 1.5px;
-  background: $PrimaryTextDark;
+  background: $color;
   transition: width .4s ease-in;
 }
 

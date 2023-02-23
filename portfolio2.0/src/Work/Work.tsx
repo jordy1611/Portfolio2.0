@@ -19,6 +19,7 @@ function About(props: WorkProps) {
       {/* python */}
       <p>Logging.debug( "Hello World" )</p>
       <section style={{ width: "60%", height: "60%", background: "black" }}></section>
+      {/* do old school dvd logo bouncing back and forth */}
     </div>
   );
 }

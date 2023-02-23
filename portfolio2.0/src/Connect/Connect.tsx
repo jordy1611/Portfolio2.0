@@ -21,6 +21,11 @@ function About(props: ConnectProps) {
         <input id='email-input'></input>
         <label htmlFor='message-input'>Message</label>
         <textarea id='message-input'></textarea>
+        <a className='connect-button'>Connect</a>
+        {/* symbol/paperairplane rotates on hover then moves on path on click
+         */}
+        {/* probably should have clear button it ends at */}
+        {/* just have new plane appear when clicking clear */}
       </form>
     </div>
   );
