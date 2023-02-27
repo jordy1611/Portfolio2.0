@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 
 type ConnectProps = {
 }
+
+// error handling
+
 function About(props: ConnectProps) {
   return (
     <div className="connect sliding-page">

@@ -103,3 +103,16 @@
     }
   }
 }
+
+@mixin wiggle($deg) {
+  display: inline-block;
+  animation: wiggle 2s infinite;
+  // transition: animation 1s ease-in-out;
+  @keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    80% { transform: rotate(0deg); }
+    85% { transform: rotate($deg); }
+    95% { transform: rotate(-$deg); }
+    100% { transform: rotate(0deg); }
+  }
+}
